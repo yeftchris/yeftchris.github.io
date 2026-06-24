@@ -1,0 +1,104 @@
+[
+  {
+    "id": "mmps-plc-sorter",
+    "title": "Mini Modular Production System",
+    "subtitle": "Automatic Sorting Trainer Kit",
+    "category": "PLC & Automation",
+    "tags": ["Omron PLC", "CX-Programmer", "Ladder Logic", "Automation"],
+    "year": "2025",
+    "status": "In Progress",
+    "thumbnail": "assets/images/project-mmps.jpg",
+    "summary": "Automatic sorting trainer kit using Omron CP1E N40 PLC as the final thesis project for D3 Electronics Engineering.",
+    "description": "A Mini Modular Production System (MMPS) designed as an automatic sorting trainer kit. The system uses an Omron CP1E N40 PLC programmed with CX-Programmer using Ladder Logic. The kit simulates a real industrial production line capable of sorting objects by material type using capacitive and inductive proximity sensors.",
+    "highlights": [
+      "Omron CP1E N40 PLC as the main controller",
+      "Sensor-based sorting: capacitive & inductive proximity",
+      "Ladder Logic programming via CX-Programmer",
+      "Modular design for educational use"
+    ],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "id": "pid-humidity-terrarium",
+    "title": "PWM-Based Dual-Fan PID Humidity Control",
+    "subtitle": "Arduino Terrarium Automation",
+    "category": "Embedded Systems",
+    "tags": ["Arduino", "PID Control", "PWM", "DHT11", "MOSFET"],
+    "year": "2025",
+    "status": "Completed",
+    "thumbnail": "assets/images/project-humidity.jpg",
+    "summary": "Closed-loop humidity control system for a terrarium using PID algorithm, PWM-driven MOSFET fans, and an ultrasonic mist maker.",
+    "description": "A dual-channel humidity control system built around an Arduino microcontroller. The system reads ambient humidity via a DHT11 sensor, computes a PID correction, and drives two IRLZ44N MOSFET-switched fans via PWM to exhaust excess moisture. An ultrasonic mist maker adds humidity when needed. The system maintains a stable setpoint suitable for reptile or plant terrariums.",
+    "highlights": [
+      "PID control loop with tunable Kp, Ki, Kd",
+      "IRLZ44N MOSFET for PWM fan control",
+      "DHT11 temperature & humidity sensing",
+      "Ultrasonic mist maker for humidity injection",
+      "Web-based SCADA dashboard via Web Serial API"
+    ],
+    "github": "https://github.com/yeftchrs",
+    "demo": ""
+  },
+  {
+    "id": "scada-hil-dashboard",
+    "title": "Supervisory HIL SCADA Dashboard",
+    "subtitle": "Real-time Web-based Control Interface",
+    "category": "Web & SCADA",
+    "tags": ["Web Serial API", "Chart.js", "JavaScript", "SCADA", "Arduino"],
+    "year": "2025",
+    "status": "Completed",
+    "thumbnail": "assets/images/project-scada.jpg",
+    "summary": "A professional, real-time Hardware-in-the-Loop SCADA dashboard built with vanilla JS, Web Serial API, and Chart.js.",
+    "description": "A browser-based supervisory control and data acquisition (SCADA) dashboard designed for Hardware-in-the-Loop (HIL) testing. The interface connects directly to an Arduino via the Web Serial API, visualizes live sensor data with Chart.js charts, and allows real-time parameter tuning. The UI features a dark professional aesthetic with restrained neon accents.",
+    "highlights": [
+      "Real-time serial communication via Web Serial API",
+      "Live Chart.js data visualization",
+      "PID parameter tuning via UI sliders",
+      "Professional dark SCADA aesthetic",
+      "No backend required — pure browser app"
+    ],
+    "github": "https://github.com/yeftchrs",
+    "demo": ""
+  },
+  {
+    "id": "rfid-security-gate",
+    "title": "RFID-Based Security Gate",
+    "subtitle": "Access Control System",
+    "category": "Embedded Systems",
+    "tags": ["Arduino", "RFID", "RC522", "Servo", "Access Control"],
+    "year": "2024",
+    "status": "Completed",
+    "thumbnail": "assets/images/project-rfid.jpg",
+    "summary": "An RFID-based automatic gate system that grants or denies access based on registered card UIDs.",
+    "description": "An embedded access control system using an RC522 RFID reader connected to an Arduino. Registered card UIDs are stored in memory; a valid scan triggers a servo motor to open the gate while an LCD displays the access status. Unauthorized cards trigger a buzzer alert.",
+    "highlights": [
+      "RC522 RFID module with UID-based authentication",
+      "Servo motor gate actuation",
+      "16x2 LCD status display",
+      "Buzzer alert for unauthorized access"
+    ],
+    "github": "https://github.com/yeftchrs",
+    "demo": ""
+  },
+  {
+    "id": "ldr-analog-switch",
+    "title": "LDR Analog Switch",
+    "subtitle": "Light-Controlled Relay Simulation",
+    "category": "Circuit Design",
+    "tags": ["Proteus 8", "LDR", "Op-Amp", "Relay", "Simulation"],
+    "year": "2024",
+    "status": "Completed",
+    "thumbnail": "assets/images/project-ldr.jpg",
+    "summary": "A light-dependent relay switch circuit designed and simulated in Proteus 8, using an LDR and op-amp comparator.",
+    "description": "A light-sensing automatic switch circuit simulated in Proteus 8. An LDR (Light Dependent Resistor) feeds into an op-amp configured as a comparator. When ambient light drops below a threshold, the comparator output switches a relay to activate a load. The circuit was designed, simulated, and validated entirely in Proteus 8 Professional.",
+    "highlights": [
+      "Op-amp comparator topology",
+      "LDR as light sensing element",
+      "Relay output for load switching",
+      "Full simulation in Proteus 8"
+    ],
+    "github": "",
+    "demo": ""
+  }
+]
