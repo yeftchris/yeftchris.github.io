@@ -191,13 +191,39 @@ overlay?.addEventListener('click', e => { if (e.target === overlay) closeModal()
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 // ── CONTACT FORM ──────────────────────────────────────────
-document.getElementById('contactForm')?.addEventListener('submit', e => {
+document.getElementById('contactForm')?.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = e.target.querySelector('.btn-primary');
-  const orig = btn.textContent;
-  btn.textContent = 'Sent ✓';
-  btn.style.background = '#00ff88';
-  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; e.target.reset(); }, 3000);
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  const formData = new FormData(e.target);
+
+  try {
+    const res = await fetch('https://formspree.io/f/xwvdvkje', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      btn.textContent = 'Sent ✓';
+      btn.style.background = '#00ff88';
+      e.target.reset();
+    } else {
+      btn.textContent = 'Failed — try again';
+      btn.style.background = '#ff4444';
+    }
+  } catch {
+    btn.textContent = 'Error — check connection';
+    btn.style.background = '#ff4444';
+  }
+
+  setTimeout(() => {
+    btn.textContent = 'Send Message →';
+    btn.style.background = '';
+    btn.disabled = false;
+  }, 3000);
 });
 
 // ── SMOOTH SCROLL ─────────────────────────────────────────
