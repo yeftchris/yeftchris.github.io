@@ -8,7 +8,7 @@
     "year": "2025",
     "status": "In Progress",
     "thumbnail": "assets/images/project-mmps.jpg",
-    "summary": "Automatic sorting trainer kit using Omron CP1E N40 PLC as the final thesis project for D3 Electronics Engineering.",
+    "summary": "Automatic sorting trainer kit using Omron CP1E N60 PLC as the final thesis project for D3 Electronics Engineering.",
     "description": "A Mini Modular Production System (MMPS) designed as an automatic sorting trainer kit. The system uses an Omron CP1E N40 PLC programmed with CX-Programmer using Ladder Logic. The kit simulates a real industrial production line capable of sorting objects by material type using capacitive and inductive proximity sensors.",
     "highlights": [
       "Omron CP1E N40 PLC as the main controller",
