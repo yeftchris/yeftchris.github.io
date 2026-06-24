@@ -200,7 +200,7 @@ document.getElementById('contactForm')?.addEventListener('submit', async e => {
   const formData = new FormData(e.target);
 
   try {
-    const res = await fetch('https://formspree.io/f/KODE_KAMU', {
+    const res = await fetch('https://formspree.io/f/xwvdvkje', {
       method: 'POST',
       body: formData,
       headers: { 'Accept': 'application/json' }
