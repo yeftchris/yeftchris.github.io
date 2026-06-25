@@ -159,10 +159,12 @@ section { padding: 100px 5vw; }
 
 /* ── HERO ───────────────────────────────────────────────── */
 #hero {
-  min-height: 80vh; /* kurangi dari 100vh */
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  padding-top: 80px; /* kurangi dari 120px */
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -181,7 +183,13 @@ section { padding: 100px 5vw; }
   background: radial-gradient(ellipse, rgba(0,229,255,0.08) 0%, transparent 70%);
   pointer-events: none;
 }
-.hero-content { position: relative; z-index: 1; max-width: 780px; }
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  flex: 1;
+  min-width: 0;
+}
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 0.6rem;
   font-family: var(--font-display);
@@ -356,7 +364,7 @@ section { padding: 100px 5vw; }
 .social-link:hover { color: var(--cyan); border-color: var(--border-accent); background: var(--cyan-dim); }
 
 /* ── SKILLS ─────────────────────────────────────────────── */
-#skills {}
+#skills { background: var(--bg-surface); }
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -588,7 +596,7 @@ section { padding: 100px 5vw; }
 .modal-links { display: flex; gap: 0.75rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 
 /* ── EXPERIENCE ─────────────────────────────────────────── */
-#experience {}
+#experience { background: var(--bg-surface); }
 .timeline { position: relative; padding-left: 2rem; }
 .timeline::before {
   content: '';
@@ -720,3 +728,31 @@ footer {
 /* ── MISC ───────────────────────────────────────────────── */
 .divider { width: 48px; height: 2px; background: linear-gradient(var(--cyan), var(--violet)); border-radius: 2px; margin-bottom: 2rem; }
 .text-cyan { color: var(--cyan); }
+
+.hero-visual {
+  flex: 0 0 480px;
+  min-width: 0;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .hero-visual { display: block; }
+}
+#tronCanvas {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-accent);
+  display: block;
+}
+#tronScore {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  #hero { gap: 3rem; }
+  .hero-visual { display: block; }
+}
