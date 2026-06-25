@@ -16,7 +16,7 @@
       "Ladder Logic programming via CX-Programmer",
       "Modular design for educational use"
     ],
-    "github": "",
+    "github": "https://github.com/yeftchris",
     "demo": ""
   },
   {
@@ -98,7 +98,28 @@
       "Relay output for load switching",
       "Full simulation in Proteus 8"
     ],
-    "github": "",
+    "github": "https://github.com/yeftchris",
+    "demo": ""
+  },
+  {
+    "id": "smart-locker-rfid",
+    "title": "Smart Locker RFID",
+    "subtitle": "Secure RFID Access with Telegram Notification",
+    "category": "Embedded Systems & IoT",
+    "tags": ["ESP32", "RFID RC522", "Telegram", "IoT"],
+    "year": "2025",
+    "status": "Completed",
+    "thumbnail": "assets/images/project-traffic.jpg",
+    "summary": "An ESP32-based smart locker that uses RFID authentication to control access and sends real-time notifications through Telegram.",
+    "description": "This project is an IoT-based smart locker developed using an ESP32 microcontroller and an RFID RC522 reader. Authorized RFID cards unlock the solenoid lock through a relay, while a door sensor monitors the locker's open and closed status. The ESP32 connects to Wi-Fi and sends real-time access notifications to a Telegram Bot, allowing users to monitor locker activity remotely. The project demonstrates embedded programming, RFID authentication, IoT communication, and electronic hardware integration.",
+    "highlights": [
+      "RFID-based authentication using RC522",
+      "Real-time Telegram notifications via Wi-Fi",
+      "Relay-controlled solenoid locking system",
+      "Door status monitoring with a sensor",
+      "Built with ESP32 for embedded IoT applications"
+    ],
+    "github": "https://github.com/yeftchris",
     "demo": ""
   }
 ]
